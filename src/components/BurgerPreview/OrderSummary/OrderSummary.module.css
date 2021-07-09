@@ -1,0 +1,9 @@
+.Button {
+  height: "3rem";
+  width: "6rem";
+  white-space: "nowrap";
+  background: "cornflowerblue";
+  border: "none";
+  color: "white";
+  border-radius: "10px";
+}

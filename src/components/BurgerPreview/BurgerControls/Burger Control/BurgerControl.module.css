@@ -1,0 +1,37 @@
+.BurgerControl {
+  width: 60%;
+  height: fit-content;
+  margin: 1rem auto;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.BurgerControl label {
+  min-width: 4rem;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .BurgerControl {
+    width: 90%;
+  }
+}
+
+.BurgerControl button {
+  /* height: 1rem; */
+  width: 25%;
+  margin: 0;
+  padding: 1rem;
+  background: rgb(255, 255, 255, 0.3);
+  border: none;
+  border-radius: 10px;
+  transition-property: background;
+  transition-duration: 0.3s;
+}
+
+.BurgerControl button:hover {
+  background: rgb(255, 255, 255, 0.5);
+}

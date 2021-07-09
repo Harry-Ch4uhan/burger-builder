@@ -1,0 +1,11 @@
+.BGoverlay {
+  z-index: 998;
+  width: 110%;
+  height: 110%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(0, 0, 0, 0.4);
+  position: fixed;
+  transition-duration: 0.3s;
+}
