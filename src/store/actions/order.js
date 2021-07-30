@@ -28,7 +28,7 @@ export const placePurchaseOrder = (orderData, token, history) => {
     dispatch(purchaseStart());
     axios
       .post(
-        "https://burger-builder-f3576-default-rtdb.firebaseio.com/orders.json?auth=" +
+        "/////" +
           token,
         orderData
       )
@@ -69,7 +69,7 @@ export const retireveOrders = (token, userId) => {
       "?auth=" + token + '&orderBy="userId"&equalTo="' + userId + '"';
     axios
       .get(
-        "https://burger-builder-f3576-default-rtdb.firebaseio.com/orders.json" +
+        "//////////" +
           queryParams
       )
       .then((res) => {
