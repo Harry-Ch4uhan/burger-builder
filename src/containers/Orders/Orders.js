@@ -65,28 +65,3 @@ const mapDispatchToProps = (dispatch) => {
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Orders);
-
-// componentDidMount() {
-//   // axios
-//   //   .get(
-//   //     "https://burger-builder-3162c-default-rtdb.firebaseio.com/orders.json"
-//   //   )
-//   //   .then((res) => {
-//   //     const fetchedOrders = [];
-//   //     for (let key in res.data) {
-//   //       // console.log(res.data.customer.name);
-//   //       fetchedOrders.push({
-//   //         id: key,
-//   //         ingredients: res.data[key].ingredients,
-//   //         price: res.data[key].price,
-//   //         name: res.data[key].customer.name,
-//   //       });
-//   //     }
-//   //     this.setState({ loading: false, orders: fetchedOrders });
-//   //     // console.log(this.state.orders);
-//   //   })
-//   //   .catch((err) => {
-//   //     this.setState({ loading: false });
-//   //     console.log(err);
-//   //   });
-// }
