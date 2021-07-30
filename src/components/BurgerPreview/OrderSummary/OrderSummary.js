@@ -51,13 +51,30 @@ const OrderSummary = (props) => {
           Your order cost:<strong>{props.totalPrice}</strong>
         </li>
       </ul>
-
-      <button className={classes.Button} onClick={props.placeOrder}>
-        Place the order
-      </button>
-      <button className={classes.Button} onClick={props.cancel}>
-        Cancel
-      </button>
+      <div
+        style={{
+          display: "flex",
+          width: "20%",
+          justifyContent: "space-between",
+        }}
+      >
+        <p
+          style={{
+            fontWeight: 700,
+            color: "orangered",
+            cursor: "pointer",
+          }}
+          onClick={props.placeOrder}
+        >
+          Continue
+        </p>
+        <p
+          style={{ fontWeight: 700, color: "red", cursor: "pointer" }}
+          onClick={props.cancel}
+        >
+          Cancel
+        </p>
+      </div>
     </>
   );
 };

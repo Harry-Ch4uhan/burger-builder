@@ -15,7 +15,7 @@ const SideDrawer = (props) => {
   return (
     <>
       <BGOverlay show={props.opened} hide={props.closeS} />
-      <div className={attachClasses.join(" ")}>
+      <div className={attachClasses.join(" ")} onClick={props.closeS}>
         <img src={Logo} alt="Burger Builder" />
         <NavItems device={false} />
       </div>

@@ -1,0 +1,74 @@
+.FormContainer {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Form {
+  /* height: 60%; */
+  width: 40%;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0 0 12px rgb(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem;
+  margin: auto;
+}
+
+.Form input {
+  border: none;
+  margin-top: 1rem;
+  height: 2rem;
+  border-bottom: 1px solid grey;
+}
+
+.BtnContainer {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.Form button {
+  padding: 0.7rem 1rem;
+  width: fit-content;
+  margin: 2rem auto;
+  margin-bottom: 0;
+  background: orange;
+  color: white;
+  box-shadow: none;
+  border: none;
+  border-radius: 10px;
+  white-space: nowrap;
+}
+
+.Submit {
+  background: rgb(218, 165, 32) !important;
+}
+
+.Submit:hover {
+  background: rgb(190, 145, 29) !important;
+}
+
+.Cancel {
+  background: rgb(255, 0, 0, 0.8) !important;
+}
+
+.Cancel:hover {
+  background: rgba(255, 41, 41, 0.8) !important;
+}
+
+@media (max-width: 1025px) {
+  .Form {
+    width: 80%;
+    min-width: 280px;
+  }
+  .BtnContainer {
+    width: 90%;
+  }
+}

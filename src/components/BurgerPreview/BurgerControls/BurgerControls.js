@@ -4,10 +4,10 @@ import BurgerControl from "./Burger Control/BurgerControl";
 import classes from "./BurgerControls.module.css";
 
 const controlObj = [
-  { label: "Meat", type: "meat" },
   { label: "Salad", type: "salad" },
-  { label: "Cheese", type: "cheese" },
   { label: "Bacon", type: "bacon" },
+  { label: "Cheese", type: "cheese" },
+  { label: "Meat", type: "meat" },
 ];
 
 const BurgerControls = (props) => {
@@ -22,11 +22,7 @@ const BurgerControls = (props) => {
           disabled={props.isDisabled[ctrl.type]}
         ></BurgerControl>
       ))}
-      <div
-        className={classes.OrderButton}
-        onClick={props.ordering}
-        disabled={true}
-      >
+      <div className={classes.OrderButton} onClick={props.ordering}>
         Order Now
       </div>
     </div>

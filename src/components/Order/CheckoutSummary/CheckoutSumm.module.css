@@ -1,0 +1,15 @@
+.CheckoutSummary {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .CheckoutSummary {
+    width: 90%;
+  }
+}

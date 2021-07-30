@@ -21,12 +21,6 @@
   height: 100%;
 }
 
-@media (min-width: 1025px) {
-  .HamBtn {
-    display: none;
-  }
-}
-
 .DrawerToggle {
   width: 40px;
   height: 100%;
@@ -46,7 +40,7 @@
   background-color: black;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 1025px) {
   .DrawerToggle {
     display: none;
   }
