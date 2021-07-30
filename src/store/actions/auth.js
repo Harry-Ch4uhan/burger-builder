@@ -1,3 +1,5 @@
+//url's are hidden for security purposes
+
 import * as actionTypes from "./actionTypes";
 import axios from "axios";
 
@@ -52,7 +54,7 @@ export const auth = (email, password) => {
     };
     axios
       .post(
-        "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyB4_a3oglFuoi-M00vV-YhAcHVPTYGC584",
+        "////////",
         authData
       )
       .then((res) => {
@@ -79,7 +81,7 @@ export const authLogin = (email, password) => {
     };
     axios
       .post(
-        "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyB4_a3oglFuoi-M00vV-YhAcHVPTYGC584",
+        "///////",
         authData
       )
       .then((res) => {
@@ -115,38 +117,3 @@ export const authCheck = () => {
     }
   };
 };
-
-// https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=
-
-// export const auth = (email, password) => {
-//   return (dispatch) => {
-//     dispatch(authUser());
-//     fire
-//       .auth()
-//       .createUserWithEmailAndPassword(email, password)
-//       .then((res) => dispatch(authSuccess(res)))
-//       .catch((err) => console.log(err));
-//   };
-// };
-
-// export const authLogin = (email, password) => {
-//   return (dispatch) => {
-//     dispatch(authUser());
-//     fire
-//       .auth()
-//       .signInWithEmailAndPassword(email, password)
-//       .then((res) => dispatch(authSuccess(res)))
-//       .catch((err) => dispatch(authFailed(err.message)));
-//   };
-// };
-
-// const data = {
-//   kind: "identitytoolkit#SignupNewUserResponse",
-//   idToken:
-//     "eyJhbGciOiJSUzI1NiIsImtpZCI6Ijc3MTBiMDE3ZmQ5YjcxMWUwMDljNmMzNmIwNzNiOGE2N2NiNjgyMTEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vYnVyZ2VyLWJ1aWxkZXItZjM1NzYiLCJhdWQiOiJidXJnZXItYnVpbGRlci1mMzU3NiIsImF1dGhfdGltZSI6MTYyNjM1NzY3MywidXNlcl9pZCI6ImhON1NKS081SXBidkhJakV3ZXhrSHFVRDVPVzIiLCJzdWIiOiJoTjdTSktPNUlwYnZISWpFd2V4a0hxVUQ1T1cyIiwiaWF0IjoxNjI2MzU3NjczLCJleHAiOjE2MjYzNjEyNzMsImVtYWlsIjoiZmdoQGZnaC5jb20iLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsiZmdoQGZnaC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.Ci2QW8HqTcpy9Wv6vtbhsfaD_l8eQjxM233306FYPZgz6fUlOaTtj_WkgYpLFqHPjUe4rGL8B107kZsjZICOfFXfEyVwiJ6H1nBf41Ub2taghRL30XP_NMrZ5J20WS0icFWQgXLVjKimiFq22leksULCFjrVkSjGD41sJZvCERHIgtsLOFSKOdBIjEqawWWtOjByDh5FWlUYJsqeGAwiDVfnXouI8Z6xkp3SaO2n0vkfmch6sU2SBuJGuobdPWvI4YSnnD82S5YIbZTZSb7IWsMoUFEv5AR6e-crRf7xNbpl5Vz2CsONloDZI3hJOEht6kQmEGQpCFDTMBRZ_1Dklg",
-//   email: "fgh@fgh.com",
-//   refreshToken:
-//     "AGEhc0Cephh67Xguokap2VTlGddjm-1HDRS5wYYj49otIhczEDpYtvQDVnfsgHNhJ_4VBjWD2VwJTWqN0GrHSGQ-n5EVISWCoSzcOi-hrBwMzLNcf10-KfeNwjRF-8iSOwJym3cX8VtRfDbFkmnwhv9n9N5uqttoJwMjURcvDyL1PXhoJZNnGOYNj59QEt9J1zhn-pEdW1X8bmwHKNu6mk9kVFKETG87ug",
-//   expiresIn: "3600",
-//   localId: "hN7SJKO5IpbvHIjEwexkHqUD5OW2",
-// };
